@@ -9,10 +9,10 @@ from aiogram.types import CallbackQuery
 from aiogram.types import Message
 from dotenv import load_dotenv
 
-from Aiogram.YouTube_API.keyboards.user_kb import (russian_commands,
-                                                   english_commands,
-                                                   final_text,
-                                                   select_video_keyboard)
+from keyboards.user_kb import (russian_commands,
+                               english_commands,
+                               final_text,
+                               select_video_keyboard)
 
 user = Router()
 
@@ -183,11 +183,10 @@ async def search_channel(message: Message, state: FSMContext):
     await message.answer(final_text)
     await state.clear()
 
-
-@user.message(Command("download"))
-async def download_handler(message: Message, state: FSMContext):
-    await message.answer("Скинь ссылку, какое видео хочешь скачать с YouTube:")
-    await state.set_state(SearchStates.link)
+# @user.message(Command("download"))
+# async def download_handler(message: Message, state: FSMContext):
+#     await message.answer("Скинь ссылку, какое видео хочешь скачать с YouTube:")
+#     await state.set_state(SearchStates.link)
 
 
 # @user.message(SearchStates.link)
