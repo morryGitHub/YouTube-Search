@@ -8,14 +8,12 @@ russian_commands = [
     BotCommand(command="start", description="🔄 Перезапустить и поприветствовать бота"),
     BotCommand(command="channel", description="🔍 Найти канал на YouTube"),
     BotCommand(command="video", description="🎬 Найти видео на YouTube"),
-    BotCommand(command="help", description="ℹ️ Узнать, что умеет бот"),
 ]
 
 english_commands = [
     BotCommand(command="start", description="🔄 Restart the bot and get a welcome message"),
     BotCommand(command="channel", description="🔍 Search for a YouTube channel"),
     BotCommand(command="video", description="🎬 Search for YouTube videos"),
-    BotCommand(command="help", description="ℹ️ What the bot can do and how to use it"),
 ]
 
 

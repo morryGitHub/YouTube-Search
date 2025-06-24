@@ -40,19 +40,18 @@ async def start_handler(message: Message):
         "Привет! 👋 Я — бот-помощник, который поможет тебе найти видео и каналы на YouTube. 🎥\n"
         "Просто введи команду /video, чтобы искать видео, \n"
         "или /channel — чтобы найти канал.\n"
-        "Если нужна помощь — пиши /help 😊"
     )
 
 
-@user.message(Command("help"))
-async def help_handler(message: Message):
-    await message.answer("""🤖 This bot can download videos from YouTube for you.
-
-How to use:
-  1. Open the YouTube.
-  2. Choose video that you liked.
-  3. Click to the «Copy» button.
-  4. Send the link to the bot and get your file!""")
+# @user.message(Command("help"))
+# async def help_handler(message: Message):
+#     await message.answer("""🤖 This bot can download videos from YouTube for you.
+#
+# How to use:
+#   1. Open the YouTube.
+#   2. Choose video that you liked.
+#   3. Click to the «Copy» button.
+#   4. Send the link to the bot and get your file!""")
 
 
 @user.message(Command("video"))
