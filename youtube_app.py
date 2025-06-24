@@ -40,7 +40,7 @@ async def process_last_pending_update(bot):
         await bot.send_message(chat_id, f"🔁 Бот снова в сети!\nВы писали: {text}")
 
 
-if '__main__' == __name__:
+if __name__ == '__main__':
     logging.basicConfig(level=logging.INFO)
     print("Bot is running")
     try:
